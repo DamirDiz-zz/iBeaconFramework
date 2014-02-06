@@ -10,6 +10,15 @@
 
 @implementation BeaconDefaults
 
+#pragma mark CONSTANTS
+
+int const BEACON_PURPLE_MAJOR = 37861;
+int const BEACON_PURPLE_MINOR = 9251;
+int const BEACON_BLUE_MAJOR   = 6868;
+int const BEACON_BLUE_MINOR   = 42222;
+int const BEACON_GREEN_MAJOR  = 27887;
+int const BEACON_GREEN_MINOR  = 24905;
+
 - (id)init
 {
     self = [super init];

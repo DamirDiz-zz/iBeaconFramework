@@ -9,10 +9,12 @@
 #import "BeaconOverviewTVC.h"
 #import "BeaconTracker.h"
 #import "BeaconOverviewCell.h"
+#import "BeaconDefaults.h"
 
 @interface BeaconOverviewTVC () <UITableViewDataSource>
 
 @property (strong,nonatomic) NSDictionary* currentBeacons;
+
 @end
 
 @implementation BeaconOverviewTVC
@@ -27,6 +29,8 @@
     }
     return self;
 }
+
+
 
 - (void)viewDidLoad
 {

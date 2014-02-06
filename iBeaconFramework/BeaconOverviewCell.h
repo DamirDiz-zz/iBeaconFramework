@@ -10,7 +10,6 @@
 
 @interface BeaconOverviewCell : UITableViewCell
 
-
 @property (weak, nonatomic) IBOutlet UILabel *majorValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *minorValueLabel;
 @property (weak, nonatomic) IBOutlet UILabel *accuracyValueLabel;
