@@ -13,24 +13,11 @@
 
 @interface BeaconOverviewTVC () <UITableViewDataSource>
 
-@property (strong,nonatomic) NSDictionary* currentBeacons;
+@property (strong, nonatomic) NSDictionary* currentBeacons;
 
 @end
 
 @implementation BeaconOverviewTVC
-
-@synthesize currentBeacons = _currentBeacons;
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-
 
 - (void)viewDidLoad
 {
@@ -120,8 +107,13 @@
     return cell;
 }
 
+- (void)beaconTrackerUpdated
+{
+    
+}
+
 - (void)beaconTrackerUpdatedWithBeacons:(NSDictionary *)beacons {
-    self.currentBeacons = beacons;
+//    self.currentBeacons = beacons;
     
     [self.tableView reloadData];
 }

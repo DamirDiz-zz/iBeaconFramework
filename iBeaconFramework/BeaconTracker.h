@@ -11,7 +11,7 @@
 
 @protocol BeaconTrackerDelegate <NSObject>
 
-@optional
+@required
 
 - (void)beaconTrackerUpdated;
 //Returns a UUID based Dictionary filled with MAJOR based Dictionary filled with MINOR based Dictionaries filled with CLBeacon objects
